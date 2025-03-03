@@ -1,0 +1,215 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Main font for readability */
+    background-color: #2a2a2a; /* Muted dark gray with a subtle blue undertone */
+    color: #e0e0e0; /* Light gray text for readability */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #3d3d3d, #212121); /* Gradient with a mix of dark grays */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff007f; /* Neon Pink */
+}
+
+.neon-title {
+    font-size: 3.5rem;
+    color: #00bcd4; /* Teal Blue */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for title */
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.neon-link {
+    text-decoration: none;
+    color: #ff007f; /* Neon Pink */
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+.neon-link:hover {
+    color: #ff9800; /* Amber Orange */
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+    transform: scale(1.1);
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.neon-input {
+    padding: 10px;
+    border: 2px solid #00bcd4; /* Teal Blue */
+    border-radius: 5px;
+    background: transparent;
+    color: #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.neon-input:focus {
+    border-color: #ff9800; /* Amber Orange */
+    box-shadow: 0 0 10px #ff9800;
+}
+
+.neon-button {
+    padding: 10px 20px;
+    background: #00bcd4; /* Teal Blue */
+    border: none;
+    border-radius: 5px;
+    color: #2a2a2a; /* Dark background for contrast */
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.neon-button:hover {
+    background: #ff007f; /* Neon Pink */
+    box-shadow: 0 0 10px #ff007f;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.game-category {
+    margin-bottom: 40px;
+}
+
+.neon-heading {
+    font-size: 2rem;
+    color: #ff007f; /* Neon Pink */
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+}
+
+.game-card {
+    background: #333; /* Darker background for contrast */
+    border: 2px solid #8a2be2; /* Soft Purple */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bcd4; /* Teal Blue glow */
+    background: #444; /* Slightly darker background on hover */
+}
+
+.game-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.game-image-large {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling for Game Titles */
+.game-title {
+    font-size: 2rem;
+    color: #ff9800; /* Amber Orange */
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+    margin-bottom: 10px;
+}
+
+/* Styling for Game Descriptions */
+.game-description {
+    font-size: 1.1rem;
+    color: #b0b0b0; /* Light gray with a slight silver touch for readability */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #3d3d3d, #212121); /* Gradient with dark gray shades */
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #8a2be2; /* Soft Purple */
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #8a2be2; /* Soft Purple */
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff007f; /* Neon Pink */
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+}
+
+/* Responsive Design Adjustments (optional) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .game-category {
+        margin-bottom: 30px;
+    }
+
+    .neon-heading {
+        font-size: 1.5rem;
+    }
+
+    .game-card {
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+}
